@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">InVoiceApp</string>
+    <string name="forgot_password"><u>Forget Password</u></string>
+    <string name="create_an_account"><u>Create an account</u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="i_have_an_account_sign_in"><u>I have an account sign in</u></string>
+    <string name="select_industry">Select Industry</string>
+    <string name="mobile">Mobile</string>
+    <string name="text_verification">We send a code to +41 (76) 558 77 76. Please write down</string>
+    <string name="confirm_code">Confirm Code</string>
+    <string name="send_code">Send Code</string>
+    <string name="please_enter_your_phone_number_we_will_send_you_reset_code">Please enter your phone number. we will send you reset code.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_confirmation">Phone Confirmation</string>
+    <string name="incl_tax_nrs_68_54">Incl.Tax\n<b>Rs.68.54</b></string>
+    <string name="quotation"><u>Quotation</u></string>
+    <string name="invoice"><u>Invoice</u></string>
+    <string name="statement"><u>Statement</u></string>
+
+</resources>
