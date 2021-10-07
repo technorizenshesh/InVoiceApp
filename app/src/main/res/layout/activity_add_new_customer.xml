@@ -34,7 +34,7 @@
                 android:padding="@dimen/_5sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Customer"
+                android:text="John Smith Invoice"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16sdp" />
 

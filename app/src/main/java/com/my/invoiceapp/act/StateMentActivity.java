@@ -7,26 +7,22 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.my.invoiceapp.R;
-import com.my.invoiceapp.databinding.ActivityCustomerInvoiceBinding;
+import com.my.invoiceapp.databinding.ActivityStateMentBinding;
 
-public class CustomerInvoice extends AppCompatActivity {
+public class StateMentActivity extends AppCompatActivity {
 
-    ActivityCustomerInvoiceBinding binding;
+    ActivityStateMentBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_customer_invoice);
+        binding= DataBindingUtil.setContentView(this,R.layout.activity_state_ment);
 
         binding.RRBack.setOnClickListener(v -> {
-
             onBackPressed();
-
         });
 
-        binding.RRCustomersInvoice.setOnClickListener(v -> {
-
-            startActivity(new Intent(CustomerInvoice.this,AddNewInvoiceCustomer.class));
-
+        binding.RRAddStatement.setOnClickListener(v -> {
+            startActivity(new Intent(StateMentActivity.this, AddStatementCustomer.class));
         });
 
     }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp"
     app:cardCornerRadius="@dimen/_10sdp"
     tools:ignore="MissingDefaultResource"
     >
@@ -17,6 +17,7 @@
     >
 
     <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -31,23 +32,23 @@
             android:textColor="@color/blue"
             android:textSize="@dimen/_14sdp" />
 
-        <ImageView
+        <TextView
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:src="@drawable/right_arw"
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            >
-
-        </ImageView>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unpaid_invoice"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp" />
 
     </RelativeLayout>
 
     <TextView
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vijay Nagar ,scheme number-32"
+        android:text="$540.00"
         android:textColor="@color/black"
         android:textSize="@dimen/_14sdp" />
 
@@ -60,32 +61,13 @@
         >
 
         <TextView
-            android:id="@+id/txtInvoice"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/invoice"
+            android:text="Remaining Days -02"
             android:textColor="@color/green"
             android:textSize="@dimen/_14sdp" />
 
-        <TextView
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/quotation"
-            android:textColor="@color/green"
-            android:textSize="@dimen/_14sdp" />
-
-        <TextView
-            android:id="@+id/txtStatement"
-            android:gravity="right"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/statement"
-            android:textColor="@color/green"
-            android:textSize="@dimen/_14sdp" />
 
     </LinearLayout>
 

@@ -17,5 +17,11 @@
     <string name="quotation"><u>Quotation</u></string>
     <string name="invoice"><u>Invoice</u></string>
     <string name="statement"><u>Statement</u></string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="sort_by_date"><u>Sort By Date</u></string>
+    <string name="unpaid_invoice"><u>unpaid invoice</u></string>
+    <string name="monthly_breakdown"><u>Monthly Breakdown</u></string>
+    <string name="customers"><u>Customers</u></string>
+    <string name="product"><u>Product</u></string>
 
 </resources>

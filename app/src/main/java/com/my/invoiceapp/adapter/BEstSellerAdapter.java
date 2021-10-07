@@ -2,7 +2,6 @@ package com.my.invoiceapp.adapter;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +11,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.my.invoiceapp.Model.CustomersModel;
 import com.my.invoiceapp.R;
-import com.my.invoiceapp.act.AddNewCustomer;
-import com.my.invoiceapp.act.CustomerInvoice;
-import com.my.invoiceapp.act.CutomersAllActivity;
-import com.my.invoiceapp.act.StateMentActivity;
 
 import java.util.ArrayList;
 
 
-public class CustomerAllAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+public class BEstSellerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     private Context mContext;
     private ArrayList<CustomersModel> modelList;
     private OnItemClickListener mItemClickListener;
 
 
-    public CustomerAllAdapter(Context context, ArrayList<CustomersModel> modelList) {
+    public BEstSellerAdapter(Context context, ArrayList<CustomersModel> modelList) {
         this.mContext = context;
         this.modelList = modelList;
     }
@@ -39,7 +34,7 @@ public class CustomerAllAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_customers_all, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_best_seller, viewGroup, false);
         return new ViewHolder(view);
     }
 
@@ -50,23 +45,6 @@ public class CustomerAllAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             final CustomersModel model = getItem(position);
             final ViewHolder genericViewHolder = (ViewHolder) holder;
 
-            genericViewHolder.txtInvoice.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    mContext.startActivity(new Intent(mContext, CustomerInvoice.class));
-
-                }
-            });
-
-            genericViewHolder.txtStatement.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    mContext.startActivity(new Intent(mContext, StateMentActivity.class));
-
-                }
-            });
         }
 
     }
@@ -93,13 +71,11 @@ public class CustomerAllAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtInvoice;
-        TextView txtStatement;
+        TextView txtName;
         public ViewHolder(final View itemView) {
             super(itemView);
 
-       this.txtInvoice=itemView.findViewById(R.id.txtInvoice);
-       this.txtStatement=itemView.findViewById(R.id.txtStatement);
+        //this.txtName=itemView.findViewById(R.id.txtName);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

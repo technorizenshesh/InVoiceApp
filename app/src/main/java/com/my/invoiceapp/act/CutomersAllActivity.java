@@ -61,6 +61,9 @@ public class CutomersAllActivity extends AppCompatActivity {
             @Override
             public void onItemClick(View view, int position, CustomersModel model) {
 
+                startActivity(new Intent(CutomersAllActivity.this,CutomersDetails.class));
+
+
             }
         });
 

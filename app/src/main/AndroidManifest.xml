@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InVoiceApp">
-        <activity android:name=".act.AddNewCustomer"></activity>
+        <activity android:name=".act.AddStatementCustomer"></activity>
+        <activity android:name=".act.StateMentActivity" />
+        <activity android:name=".act.AddNewInvoiceCustomer" />
+        <activity android:name=".act.CustomerInvoice" />
+        <activity android:name=".act.AddNewCustomer" />
         <activity android:name=".act.CutomersDetails" />
         <activity android:name=".act.CutomersAllActivity" />
         <activity android:name=".act.HomeActivity" />

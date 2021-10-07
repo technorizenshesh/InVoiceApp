@@ -40,12 +40,13 @@
                 />
 
             <RelativeLayout
+                android:id="@+id/RR_CustomersInvoice"
                 android:layout_alignParentRight="true"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/more"
+                    android:src="@drawable/add"
                     android:layout_centerInParent="true"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp">
