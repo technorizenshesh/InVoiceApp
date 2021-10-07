@@ -19,9 +19,11 @@ import com.my.invoiceapp.fragment.ReportFragment;
 import com.my.invoiceapp.fragment.SettingBottomFragment;
 
 public class HomeActivity extends AppCompatActivity {
+
     Fragment fragment;
     ActivityHomeBinding binding;
     boolean doubleBackToExitPressedOnce = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
